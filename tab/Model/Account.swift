@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  Account.swift
 //  tab
 //
 //  Created by Masato TSUTSUMI on 2019/07/15.
@@ -8,13 +8,12 @@
 
 import Foundation
 
-struct User {
+struct Account {
     let id: Int
     var displayName: String
     var username: String
-    var avatar: URL
     var biography: String
+    var avatar: URL
+    var password: String
     var header: URL
-    var isFollowed: Bool
-    var isFollowing: Bool
 }

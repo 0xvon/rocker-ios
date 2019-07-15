@@ -12,4 +12,6 @@ struct Tweet {
     let id: Int
     let text: String
     let user: User
+    var like: Bool
+    var retweet: Bool
 }
