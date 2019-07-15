@@ -20,6 +20,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        timelineView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         timelineView.delegate = self
         timelineView.dataSource = self
     }
@@ -36,5 +38,9 @@ extension FirstViewController {
         let cell: UITableViewCell = timelineView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel!.text = tweets[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toTweetDetail", sender: nil)
     }
 }
