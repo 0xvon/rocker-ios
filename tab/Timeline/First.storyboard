@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nY9-56-y5F">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nY9-56-y5F">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-788" y="21"/>
         </scene>
-        <!--First-->
+        <!--Timeline-->
         <scene sceneID="pqY-P9-Bjt">
             <objects>
                 <viewController id="TjB-5q-ncK" customClass="FirstViewController" customModule="tab" sceneMemberID="viewController">
@@ -48,8 +46,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YGJ-8C-XT6"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="gGH-CU-pnu"/>
-                    <navigationItem key="navigationItem" id="omr-sz-T9O"/>
+                    <tabBarItem key="tabBarItem" title="Timeline" image="first" id="gGH-CU-pnu"/>
+                    <navigationItem key="navigationItem" title="Timeline" id="omr-sz-T9O"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="timelineView" destination="ifC-kg-Ryb" id="Fw9-nA-UnQ"/>

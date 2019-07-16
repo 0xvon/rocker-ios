@@ -29,6 +29,10 @@
 		D95A237722DC799F000BB119 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A237622DC799F000BB119 /* ChatViewController.swift */; };
 		D95A237922DC79C0000BB119 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A237822DC79C0000BB119 /* Chat.storyboard */; };
 		D95A237B22DC7C10000BB119 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A237A22DC7C10000BB119 /* Account.swift */; };
+		D9A04D8822DDDB4A00592164 /* ActionItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A04D8722DDDB4A00592164 /* ActionItemViewController.swift */; };
+		D9A04D8E22DDFBCE00592164 /* ActionItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A04D8D22DDFBCE00592164 /* ActionItem.storyboard */; };
+		D9A04D9122DE0CF300592164 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A04D9022DE0CF300592164 /* SettingViewController.swift */; };
+		D9A04D9322DE0CFB00592164 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A04D9222DE0CFB00592164 /* Setting.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		D95A237622DC799F000BB119 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		D95A237822DC79C0000BB119 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		D95A237A22DC7C10000BB119 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		D9A04D8722DDDB4A00592164 /* ActionItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionItemViewController.swift; sourceTree = "<group>"; };
+		D9A04D8D22DDFBCE00592164 /* ActionItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActionItem.storyboard; sourceTree = "<group>"; };
+		D9A04D9022DE0CF300592164 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		D9A04D9222DE0CFB00592164 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +143,8 @@
 		D95A235622DC2CF5000BB119 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				D9A04D8F22DE0CE500592164 /* Setting */,
+				D9A04D8622DDDADC00592164 /* ActionItem */,
 				D95A235122DC25FF000BB119 /* FourthViewController.swift */,
 				D95A235D22DC2F4D000BB119 /* Fourth.storyboard */,
 			);
@@ -177,6 +187,24 @@
 				D95A237822DC79C0000BB119 /* Chat.storyboard */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		D9A04D8622DDDADC00592164 /* ActionItem */ = {
+			isa = PBXGroup;
+			children = (
+				D9A04D8722DDDB4A00592164 /* ActionItemViewController.swift */,
+				D9A04D8D22DDFBCE00592164 /* ActionItem.storyboard */,
+			);
+			path = ActionItem;
+			sourceTree = "<group>";
+		};
+		D9A04D8F22DE0CE500592164 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				D9A04D9022DE0CF300592164 /* SettingViewController.swift */,
+				D9A04D9222DE0CFB00592164 /* Setting.storyboard */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,9 +272,11 @@
 				D95A234322DC2116000BB119 /* Main.storyboard in Resources */,
 				D95A235E22DC2F4D000BB119 /* Fourth.storyboard in Resources */,
 				D95A235A22DC2DD6000BB119 /* Second.storyboard in Resources */,
+				D9A04D8E22DDFBCE00592164 /* ActionItem.storyboard in Resources */,
 				D95A235C22DC2EF1000BB119 /* Third.storyboard in Resources */,
 				D95A237922DC79C0000BB119 /* Chat.storyboard in Resources */,
 				D95A235822DC2D23000BB119 /* First.storyboard in Resources */,
+				D9A04D9322DE0CFB00592164 /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +292,7 @@
 				D95A237722DC799F000BB119 /* ChatViewController.swift in Sources */,
 				D95A236122DC38FE000BB119 /* tweet.swift in Sources */,
 				D95A233C22DC2116000BB119 /* AppDelegate.swift in Sources */,
+				D9A04D9122DE0CF300592164 /* SettingViewController.swift in Sources */,
 				D95A237B22DC7C10000BB119 /* Account.swift in Sources */,
 				D95A235022DC21CA000BB119 /* ThirdViewController.swift in Sources */,
 				D95A233E22DC2116000BB119 /* FirstViewController.swift in Sources */,
@@ -269,6 +300,7 @@
 				D95A236522DC3EFB000BB119 /* Artist.swift in Sources */,
 				D95A236322DC39FA000BB119 /* User.swift in Sources */,
 				D95A237422DC7350000BB119 /* TweetDetailViewController.swift in Sources */,
+				D9A04D8822DDDB4A00592164 /* ActionItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
