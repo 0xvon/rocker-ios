@@ -35,6 +35,8 @@
 		D9A04D9322DE0CFB00592164 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A04D9222DE0CFB00592164 /* Setting.storyboard */; };
 		D9A04D9622DE120300592164 /* TimelineCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A04D9522DE120300592164 /* TimelineCellViewController.swift */; };
 		D9A04D9822DE121700592164 /* TimelineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A04D9722DE121700592164 /* TimelineCell.xib */; };
+		D9A04D9B22DE274800592164 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A04D9A22DE274800592164 /* CommentViewController.swift */; };
+		D9A04D9F22DE27BD00592164 /* Comment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A04D9E22DE27BD00592164 /* Comment.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		D9A04D9222DE0CFB00592164 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		D9A04D9522DE120300592164 /* TimelineCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCellViewController.swift; sourceTree = "<group>"; };
 		D9A04D9722DE121700592164 /* TimelineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineCell.xib; sourceTree = "<group>"; };
+		D9A04D9A22DE274800592164 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		D9A04D9E22DE27BD00592164 /* Comment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Comment.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,10 +219,20 @@
 		D9A04D9422DE11EF00592164 /* TimelineCell */ = {
 			isa = PBXGroup;
 			children = (
+				D9A04D9922DE273300592164 /* Comment */,
 				D9A04D9522DE120300592164 /* TimelineCellViewController.swift */,
 				D9A04D9722DE121700592164 /* TimelineCell.xib */,
 			);
 			path = TimelineCell;
+			sourceTree = "<group>";
+		};
+		D9A04D9922DE273300592164 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				D9A04D9A22DE274800592164 /* CommentViewController.swift */,
+				D9A04D9E22DE27BD00592164 /* Comment.storyboard */,
+			);
+			path = Comment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +301,7 @@
 				D95A234322DC2116000BB119 /* Main.storyboard in Resources */,
 				D95A235E22DC2F4D000BB119 /* Fourth.storyboard in Resources */,
 				D95A235A22DC2DD6000BB119 /* Second.storyboard in Resources */,
+				D9A04D9F22DE27BD00592164 /* Comment.storyboard in Resources */,
 				D9A04D8E22DDFBCE00592164 /* ActionItem.storyboard in Resources */,
 				D95A235C22DC2EF1000BB119 /* Third.storyboard in Resources */,
 				D95A237922DC79C0000BB119 /* Chat.storyboard in Resources */,
@@ -310,6 +325,7 @@
 				D9A04D9122DE0CF300592164 /* SettingViewController.swift in Sources */,
 				D95A237B22DC7C10000BB119 /* Account.swift in Sources */,
 				D95A235022DC21CA000BB119 /* ThirdViewController.swift in Sources */,
+				D9A04D9B22DE274800592164 /* CommentViewController.swift in Sources */,
 				D95A233E22DC2116000BB119 /* FirstViewController.swift in Sources */,
 				D95A235222DC25FF000BB119 /* FourthViewController.swift in Sources */,
 				D95A236522DC3EFB000BB119 /* Artist.swift in Sources */,

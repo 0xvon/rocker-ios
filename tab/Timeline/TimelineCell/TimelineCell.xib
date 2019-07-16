@@ -53,14 +53,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x03-1Q-1Hs">
                                 <rect key="frame" x="0.0" y="0.0" width="100.5" height="36.5"/>
                                 <state key="normal" title="comment"/>
+                                <connections>
+                                    <action selector="commentButtonTapped:" destination="Yyg-Jj-w4l" eventType="touchUpInside" id="csl-lo-ZO0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMF-bZ-aDd">
                                 <rect key="frame" x="100.5" y="0.0" width="101" height="36.5"/>
                                 <state key="normal" title="retweet"/>
+                                <connections>
+                                    <action selector="retweetButtonTapped:" destination="Yyg-Jj-w4l" eventType="touchUpInside" id="71w-I8-1C3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbM-S7-G3b">
                                 <rect key="frame" x="201.5" y="0.0" width="100.5" height="36.5"/>
                                 <state key="normal" title="like"/>
+                                <connections>
+                                    <action selector="likeButtonTapped:" destination="Yyg-Jj-w4l" eventType="touchUpInside" id="cer-56-Lk7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -84,7 +93,10 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="avatar" destination="zHg-xx-8Hc" id="JIJ-to-keW"/>
+                <outlet property="commentButton" destination="x03-1Q-1Hs" id="8pZ-HP-1Ak"/>
                 <outlet property="displayName" destination="LZv-qT-0yS" id="tmO-Ah-UAj"/>
+                <outlet property="likeButton" destination="bbM-S7-G3b" id="qLm-Nd-apF"/>
+                <outlet property="retweetButton" destination="DMF-bZ-aDd" id="hn1-xn-EZE"/>
                 <outlet property="tweet" destination="wtv-vt-b2l" id="QNt-nc-bv2"/>
                 <outlet property="username" destination="TGb-xS-uqZ" id="00V-CE-gW9"/>
             </connections>
