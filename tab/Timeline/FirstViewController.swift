@@ -9,19 +9,14 @@
 import UIKit
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var tweets: [String] = [
-        "おちんちん",
-        "あ",
-        "い",
-        "ええいｆじゃおｄｆｊ"
-    ]
+    
     @IBOutlet weak var timelineView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        timelineView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        timelineView.register(UINib(nibName: "TimelineCell", bundle: nil), forCellReuseIdentifier: "TimelineCell")
         timelineView.delegate = self
         timelineView.dataSource = self
     }
@@ -31,12 +26,11 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
 extension FirstViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tweets.count
+        return 100
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = timelineView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel!.text = tweets[indexPath.row]
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "TimelineCell", for: indexPath) as! TimelineCellViewController
         return cell
     }
     

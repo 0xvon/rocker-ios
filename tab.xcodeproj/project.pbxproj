@@ -33,6 +33,8 @@
 		D9A04D8E22DDFBCE00592164 /* ActionItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A04D8D22DDFBCE00592164 /* ActionItem.storyboard */; };
 		D9A04D9122DE0CF300592164 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A04D9022DE0CF300592164 /* SettingViewController.swift */; };
 		D9A04D9322DE0CFB00592164 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A04D9222DE0CFB00592164 /* Setting.storyboard */; };
+		D9A04D9622DE120300592164 /* TimelineCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A04D9522DE120300592164 /* TimelineCellViewController.swift */; };
+		D9A04D9822DE121700592164 /* TimelineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A04D9722DE121700592164 /* TimelineCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		D9A04D8D22DDFBCE00592164 /* ActionItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActionItem.storyboard; sourceTree = "<group>"; };
 		D9A04D9022DE0CF300592164 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		D9A04D9222DE0CFB00592164 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		D9A04D9522DE120300592164 /* TimelineCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCellViewController.swift; sourceTree = "<group>"; };
+		D9A04D9722DE121700592164 /* TimelineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 		D95A235322DC2CCD000BB119 /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
+				D9A04D9422DE11EF00592164 /* TimelineCell */,
 				D95A237022DC7332000BB119 /* TweetDetal */,
 				D95A233D22DC2116000BB119 /* FirstViewController.swift */,
 				D95A235722DC2D23000BB119 /* First.storyboard */,
@@ -207,6 +212,15 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		D9A04D9422DE11EF00592164 /* TimelineCell */ = {
+			isa = PBXGroup;
+			children = (
+				D9A04D9522DE120300592164 /* TimelineCellViewController.swift */,
+				D9A04D9722DE121700592164 /* TimelineCell.xib */,
+			);
+			path = TimelineCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A04D9822DE121700592164 /* TimelineCell.xib in Resources */,
 				D95A236F22DC6C2F000BB119 /* ArtistDetail.storyboard in Resources */,
 				D95A234822DC2117000BB119 /* LaunchScreen.storyboard in Resources */,
 				D95A237222DC7342000BB119 /* TweetDetail.storyboard in Resources */,
@@ -301,6 +316,7 @@
 				D95A236322DC39FA000BB119 /* User.swift in Sources */,
 				D95A237422DC7350000BB119 /* TweetDetailViewController.swift in Sources */,
 				D9A04D8822DDDB4A00592164 /* ActionItemViewController.swift in Sources */,
+				D9A04D9622DE120300592164 /* TimelineCellViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
