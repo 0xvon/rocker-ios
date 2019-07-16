@@ -23,9 +23,12 @@ class TimelineCellViewController: UITableViewCell {
         displayName.text = "Masato Tsutsumi"
         username.text = "@masatojames"
         username.textColor = .gray
+        tweet.isUserInteractionEnabled = false
     }
     
 //    override func setSelected(_ selected: Bool, animated: Bool) {
-//        <#code#>
+//        tweet.backgroundColor = .gray
 //    }
+    
+    
 }

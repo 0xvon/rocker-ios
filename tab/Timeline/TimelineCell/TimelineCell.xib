@@ -9,11 +9,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" selectionStyle="default" indentationWidth="20" reuseIdentifier="TimelineCell" id="Yyg-Jj-w4l" customClass="TimelineCellViewController" customModule="tab" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="279"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" selectionStyle="default" indentationWidth="20" reuseIdentifier="TimelineCell" rowHeight="325" id="Yyg-Jj-w4l" customClass="TimelineCellViewController" customModule="tab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="325"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yyg-Jj-w4l" id="QzO-3n-ZMD">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="279"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="325"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zHg-xx-8Hc">
@@ -25,19 +25,19 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZv-qT-0yS">
-                        <rect key="frame" x="96" y="16" width="42" height="21"/>
+                        <rect key="frame" x="96" y="16" width="42" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGb-xS-uqZ">
-                        <rect key="frame" x="148" y="16" width="42" height="21"/>
+                        <rect key="frame" x="148" y="16" width="42" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtv-vt-b2l">
-                        <rect key="frame" x="96" y="53" width="302" height="210"/>
+                        <rect key="frame" x="96" y="52.5" width="302" height="210"/>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="210" id="iec-zI-vez"/>
@@ -47,16 +47,37 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="03s-kE-6aT">
+                        <rect key="frame" x="96" y="272.5" width="302" height="36.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x03-1Q-1Hs">
+                                <rect key="frame" x="0.0" y="0.0" width="100.5" height="36.5"/>
+                                <state key="normal" title="comment"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMF-bZ-aDd">
+                                <rect key="frame" x="100.5" y="0.0" width="101" height="36.5"/>
+                                <state key="normal" title="retweet"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbM-S7-G3b">
+                                <rect key="frame" x="201.5" y="0.0" width="100.5" height="36.5"/>
+                                <state key="normal" title="like"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </stackView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="03s-kE-6aT" firstAttribute="top" secondItem="wtv-vt-b2l" secondAttribute="bottom" constant="10" id="6CF-no-OcN"/>
                     <constraint firstAttribute="trailing" secondItem="wtv-vt-b2l" secondAttribute="trailing" constant="16" id="GyR-he-hc6"/>
                     <constraint firstItem="TGb-xS-uqZ" firstAttribute="leading" secondItem="LZv-qT-0yS" secondAttribute="trailing" constant="10" id="IF4-fA-aHh"/>
                     <constraint firstItem="LZv-qT-0yS" firstAttribute="leading" secondItem="zHg-xx-8Hc" secondAttribute="trailing" constant="16" id="Qe1-ny-aEn"/>
                     <constraint firstItem="LZv-qT-0yS" firstAttribute="top" secondItem="zHg-xx-8Hc" secondAttribute="top" id="VqW-vx-FYt"/>
                     <constraint firstItem="zHg-xx-8Hc" firstAttribute="leading" secondItem="QzO-3n-ZMD" secondAttribute="leading" constant="16" id="WLS-dr-9eR"/>
                     <constraint firstItem="wtv-vt-b2l" firstAttribute="leading" secondItem="LZv-qT-0yS" secondAttribute="leading" id="Xql-z6-5C9"/>
+                    <constraint firstItem="03s-kE-6aT" firstAttribute="leading" secondItem="wtv-vt-b2l" secondAttribute="leading" id="ZE0-Mg-Yti"/>
                     <constraint firstItem="wtv-vt-b2l" firstAttribute="top" secondItem="LZv-qT-0yS" secondAttribute="bottom" constant="16" id="cHm-BU-uaW"/>
-                    <constraint firstAttribute="bottom" secondItem="wtv-vt-b2l" secondAttribute="bottom" constant="16" id="deD-uS-hO1"/>
+                    <constraint firstItem="03s-kE-6aT" firstAttribute="trailing" secondItem="wtv-vt-b2l" secondAttribute="trailing" id="gt4-ke-J78"/>
+                    <constraint firstAttribute="bottom" secondItem="03s-kE-6aT" secondAttribute="bottom" constant="16" id="mgE-Y8-Aq9"/>
                     <constraint firstItem="TGb-xS-uqZ" firstAttribute="top" secondItem="LZv-qT-0yS" secondAttribute="top" id="nzi-yt-nyX"/>
                     <constraint firstItem="zHg-xx-8Hc" firstAttribute="top" secondItem="QzO-3n-ZMD" secondAttribute="top" constant="16" id="tw0-kX-0nl"/>
                 </constraints>
@@ -67,7 +88,7 @@
                 <outlet property="tweet" destination="wtv-vt-b2l" id="QNt-nc-bv2"/>
                 <outlet property="username" destination="TGb-xS-uqZ" id="00V-CE-gW9"/>
             </connections>
-            <point key="canvasLocation" x="134.78260869565219" y="197.20982142857142"/>
+            <point key="canvasLocation" x="134.78260869565219" y="212.61160714285714"/>
         </tableViewCell>
     </objects>
 </document>

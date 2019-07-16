@@ -35,6 +35,11 @@ extension FirstViewController {
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "TimelineCell", for: indexPath) as! TimelineCellViewController
+//        cell.layer.opacity = 1
+//        cell.backgroundColor = .white
+//        cell.textLabel?.layer.backgroundColor = UIColor.gray.cgColor
+        cell.textLabel?.backgroundColor = .clear
         performSegue(withIdentifier: "toTweetDetail", sender: nil)
     }
 }
