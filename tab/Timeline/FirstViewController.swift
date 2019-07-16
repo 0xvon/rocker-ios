@@ -10,6 +10,9 @@ import UIKit
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
+    @IBOutlet weak var tweetButton: UIButton!
+    @IBOutlet weak var notificationButton: UIButton!
     @IBOutlet weak var timelineView: UITableView!
     
     override func viewDidLoad() {
@@ -19,8 +22,19 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         timelineView.register(UINib(nibName: "TimelineCell", bundle: nil), forCellReuseIdentifier: "TimelineCell")
         timelineView.delegate = self
         timelineView.dataSource = self
+        
+        tweetButton.setTitle("tweet", for: .normal)
+        notificationButton.setTitle("通知", for: .normal)
+        
     }
-
+    
+    @IBAction func notificationButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "toNotification", sender: nil)
+    }
+    @IBAction func tweetButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "toNewTweet", sender: nil)
+    }
+    
 
 }
 

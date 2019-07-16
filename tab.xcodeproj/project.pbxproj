@@ -29,6 +29,10 @@
 		D95A237722DC799F000BB119 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A237622DC799F000BB119 /* ChatViewController.swift */; };
 		D95A237922DC79C0000BB119 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A237822DC79C0000BB119 /* Chat.storyboard */; };
 		D95A237B22DC7C10000BB119 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A237A22DC7C10000BB119 /* Account.swift */; };
+		D965440C22DE3025007D2FE8 /* NewTweet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D965440B22DE3025007D2FE8 /* NewTweet.storyboard */; };
+		D965440E22DE304A007D2FE8 /* NewTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965440D22DE304A007D2FE8 /* NewTweetViewController.swift */; };
+		D965441022DE3058007D2FE8 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965440F22DE3058007D2FE8 /* NotificationViewController.swift */; };
+		D965441222DE3061007D2FE8 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D965441122DE3061007D2FE8 /* Notification.storyboard */; };
 		D9A04D8822DDDB4A00592164 /* ActionItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A04D8722DDDB4A00592164 /* ActionItemViewController.swift */; };
 		D9A04D8E22DDFBCE00592164 /* ActionItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A04D8D22DDFBCE00592164 /* ActionItem.storyboard */; };
 		D9A04D9122DE0CF300592164 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A04D9022DE0CF300592164 /* SettingViewController.swift */; };
@@ -64,6 +68,10 @@
 		D95A237622DC799F000BB119 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		D95A237822DC79C0000BB119 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		D95A237A22DC7C10000BB119 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		D965440B22DE3025007D2FE8 /* NewTweet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewTweet.storyboard; sourceTree = "<group>"; };
+		D965440D22DE304A007D2FE8 /* NewTweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetViewController.swift; sourceTree = "<group>"; };
+		D965440F22DE3058007D2FE8 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		D965441122DE3061007D2FE8 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
 		D9A04D8722DDDB4A00592164 /* ActionItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionItemViewController.swift; sourceTree = "<group>"; };
 		D9A04D8D22DDFBCE00592164 /* ActionItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActionItem.storyboard; sourceTree = "<group>"; };
 		D9A04D9022DE0CF300592164 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +129,8 @@
 		D95A235322DC2CCD000BB119 /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
+				D965440A22DE300E007D2FE8 /* NewTweet */,
+				D965440922DE3005007D2FE8 /* Notification */,
 				D9A04D9422DE11EF00592164 /* TimelineCell */,
 				D95A237022DC7332000BB119 /* TweetDetal */,
 				D95A233D22DC2116000BB119 /* FirstViewController.swift */,
@@ -196,6 +206,24 @@
 				D95A237822DC79C0000BB119 /* Chat.storyboard */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		D965440922DE3005007D2FE8 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				D965440F22DE3058007D2FE8 /* NotificationViewController.swift */,
+				D965441122DE3061007D2FE8 /* Notification.storyboard */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		D965440A22DE300E007D2FE8 /* NewTweet */ = {
+			isa = PBXGroup;
+			children = (
+				D965440B22DE3025007D2FE8 /* NewTweet.storyboard */,
+				D965440D22DE304A007D2FE8 /* NewTweetViewController.swift */,
+			);
+			path = NewTweet;
 			sourceTree = "<group>";
 		};
 		D9A04D8622DDDADC00592164 /* ActionItem */ = {
@@ -298,12 +326,14 @@
 				D95A234822DC2117000BB119 /* LaunchScreen.storyboard in Resources */,
 				D95A237222DC7342000BB119 /* TweetDetail.storyboard in Resources */,
 				D95A234522DC2117000BB119 /* Assets.xcassets in Resources */,
+				D965441222DE3061007D2FE8 /* Notification.storyboard in Resources */,
 				D95A234322DC2116000BB119 /* Main.storyboard in Resources */,
 				D95A235E22DC2F4D000BB119 /* Fourth.storyboard in Resources */,
 				D95A235A22DC2DD6000BB119 /* Second.storyboard in Resources */,
 				D9A04D9F22DE27BD00592164 /* Comment.storyboard in Resources */,
 				D9A04D8E22DDFBCE00592164 /* ActionItem.storyboard in Resources */,
 				D95A235C22DC2EF1000BB119 /* Third.storyboard in Resources */,
+				D965440C22DE3025007D2FE8 /* NewTweet.storyboard in Resources */,
 				D95A237922DC79C0000BB119 /* Chat.storyboard in Resources */,
 				D95A235822DC2D23000BB119 /* First.storyboard in Resources */,
 				D9A04D9322DE0CFB00592164 /* Setting.storyboard in Resources */,
@@ -321,6 +351,7 @@
 				D95A236D22DC6A67000BB119 /* ArtistDetailViewController.swift in Sources */,
 				D95A237722DC799F000BB119 /* ChatViewController.swift in Sources */,
 				D95A236122DC38FE000BB119 /* tweet.swift in Sources */,
+				D965440E22DE304A007D2FE8 /* NewTweetViewController.swift in Sources */,
 				D95A233C22DC2116000BB119 /* AppDelegate.swift in Sources */,
 				D9A04D9122DE0CF300592164 /* SettingViewController.swift in Sources */,
 				D95A237B22DC7C10000BB119 /* Account.swift in Sources */,
@@ -330,6 +361,7 @@
 				D95A235222DC25FF000BB119 /* FourthViewController.swift in Sources */,
 				D95A236522DC3EFB000BB119 /* Artist.swift in Sources */,
 				D95A236322DC39FA000BB119 /* User.swift in Sources */,
+				D965441022DE3058007D2FE8 /* NotificationViewController.swift in Sources */,
 				D95A237422DC7350000BB119 /* TweetDetailViewController.swift in Sources */,
 				D9A04D8822DDDB4A00592164 /* ActionItemViewController.swift in Sources */,
 				D9A04D9622DE120300592164 /* TimelineCellViewController.swift in Sources */,

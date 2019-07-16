@@ -47,11 +47,39 @@
                         <viewLayoutGuide key="safeArea" id="YGJ-8C-XT6"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Timeline" image="first" id="gGH-CU-pnu"/>
-                    <navigationItem key="navigationItem" title="Timeline" id="omr-sz-T9O"/>
+                    <navigationItem key="navigationItem" title="Timeline" id="omr-sz-T9O">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="H8T-gt-hBB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xGQ-7c-lTl">
+                                <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="notificationButtonTapped:" destination="TjB-5q-ncK" eventType="touchUpInside" id="p9X-Lk-Tzt"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="1s3-cu-VHX">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZnG-GD-Yu6">
+                                <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tweetButtonTapped:" destination="TjB-5q-ncK" eventType="touchUpInside" id="P6z-c4-I8m"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="tweetButtonTapped:" destination="TjB-5q-ncK" id="RY3-me-dih"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="timelineView" destination="ifC-kg-Ryb" id="Fw9-nA-UnQ"/>
+                        <outlet property="notificationButton" destination="xGQ-7c-lTl" id="lbU-of-Q5f"/>
+                        <outlet property="timelineView" destination="ifC-kg-Ryb" id="MnU-Xp-c1T"/>
+                        <outlet property="tweetButton" destination="ZnG-GD-Yu6" id="Dja-Mh-xIF"/>
                         <segue destination="PIX-gf-7yW" kind="push" identifier="toTweetDetail" id="z7m-Sx-gMu"/>
+                        <segue destination="qaH-sQ-d7d" kind="push" identifier="toNewTweet" id="zi1-aI-3fP"/>
+                        <segue destination="0ZB-5e-3uF" kind="push" identifier="toNotification" id="INl-7j-VKX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a15-YK-y1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -67,6 +95,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ir9-Rk-ybq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="596" y="21"/>
+        </scene>
+        <!--NewTweet-->
+        <scene sceneID="9ZY-fC-l2A">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewTweet" id="qaH-sQ-d7d" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UXV-3f-zMk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNp-qq-88P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="638" y="-113"/>
+        </scene>
+        <!--Notification-->
+        <scene sceneID="FQ7-qo-Akd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notification" id="0ZB-5e-3uF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NSt-dO-MXl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfO-m5-BHj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="638" y="-244"/>
         </scene>
     </scenes>
     <resources>
