@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oBP-JL-IoW">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Artists View Controller-->
+        <scene sceneID="QA2-JE-RRN">
+            <objects>
+                <viewController storyboardIdentifier="Artists" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oBP-JL-IoW" customClass="ArtistsViewController" customModule="tab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hi0-9Y-Cdl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BDk-ks-rJ4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BDk-ks-rJ4" firstAttribute="top" secondItem="liG-N1-Vhm" secondAttribute="top" id="NBi-fB-wzA"/>
+                            <constraint firstItem="BDk-ks-rJ4" firstAttribute="leading" secondItem="liG-N1-Vhm" secondAttribute="leading" id="Sul-Qz-vx5"/>
+                            <constraint firstItem="liG-N1-Vhm" firstAttribute="bottom" secondItem="BDk-ks-rJ4" secondAttribute="bottom" id="Vnj-iT-TZm"/>
+                            <constraint firstItem="liG-N1-Vhm" firstAttribute="trailing" secondItem="BDk-ks-rJ4" secondAttribute="trailing" id="kq0-Ds-Y8t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="liG-N1-Vhm"/>
+                    </view>
+                    <connections>
+                        <outlet property="artistsTableView" destination="BDk-ks-rJ4" id="0aD-WM-nl0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JRf-yV-FAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
