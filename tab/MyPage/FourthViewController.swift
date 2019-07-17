@@ -10,6 +10,7 @@ import UIKit
 
 
 class FourthViewController: UIViewController, UIScrollViewDelegate {
+    let display: CGRect = UIScreen.main.bounds
     
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var displayName: UILabel!
@@ -17,7 +18,8 @@ class FourthViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var settingButton: UIButton!
     @IBOutlet weak var biography: UITextView!
     
-    @IBOutlet weak var TweetsContainerView: UIView!
+    
+    @IBOutlet weak var tweetsContainerView: UIView!
     @IBOutlet weak var ArtistsContainerView: UIView!
     @IBOutlet weak var MediaContainerView: UIView!
     @IBOutlet weak var LikesContainerView: UIView!
@@ -26,8 +28,20 @@ class FourthViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var barLefeConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var tweetsWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var artistsWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var mediaWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var likesWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var wiewWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var barUnderLineWidthConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var tweetButton: UIButton!
+    @IBOutlet weak var artistsButton: UIButton!
+    @IBOutlet weak var mediaButton: UIButton!
+    @IBOutlet weak var likesButton: UIButton!
     
     override func viewDidLoad() {
+        print(display.size.width)
         super.viewDidLoad()
         avatar.image = UIImage(named: "avatar")
         avatar.layer.cornerRadius = 50
@@ -44,19 +58,83 @@ class FourthViewController: UIViewController, UIScrollViewDelegate {
         
         horizontalScrollView.delegate = self
         
+        tweetsWidthConstraint.constant = display.size.width
+        artistsWidthConstraint.constant = display.size.width
+        mediaWidthConstraint.constant = display.size.width
+        likesWidthConstraint.constant = display.size.width
+        wiewWidthConstraint.constant = display.size.width * 4
+        barUnderLineWidthConstraint.constant = display.size.width / 4
+        
+        tabButton()
     }
     @IBAction func settingButtonTapped(_ sender: Any) {
         performSegue(withIdentifier: "toSetting", sender: nil)
     }
+    
+    @IBAction func tweetTabTapped(_ sender: Any) {
+        horizontalScrollView.contentOffset.x = 0
+        horizontalScrollView.contentOffset.y = 0
+        barLefeConstraint.constant = horizontalScrollView.contentOffset.x / 4
+        tabButton()
+    }
+    
+    @IBAction func artistTabTapped(_ sender: Any) {
+        horizontalScrollView.contentOffset.x = 414
+        horizontalScrollView.contentOffset.y = 0
+        barLefeConstraint.constant = horizontalScrollView.contentOffset.x / 4
+        tabButton()
+    }
+    
+    @IBAction func mediaTabTapped(_ sender: Any) {
+        horizontalScrollView.contentOffset.x = 828
+        horizontalScrollView.contentOffset.y = 0
+        barLefeConstraint.constant = horizontalScrollView.contentOffset.x / 4
+        tabButton()
+    }
+    
+    @IBAction func likeTabTapped(_ sender: Any) {
+        horizontalScrollView.contentOffset.x = 1242
+        horizontalScrollView.contentOffset.y = 0
+        barLefeConstraint.constant = horizontalScrollView.contentOffset.x / 4
+        tabButton()
+    }
+    
+    func tabButton() {
+        if horizontalScrollView.contentOffset.x / 4 < 47 {
+            tweetButton.setTitleColor(.red, for: .normal)
+            artistsButton.setTitleColor(.black, for: .normal)
+            mediaButton.setTitleColor(.black, for: .normal)
+            likesButton.setTitleColor(.black, for: .normal)
+        } else if horizontalScrollView.contentOffset.x / 4 < 157 {
+            tweetButton.setTitleColor(.black, for: .normal)
+            artistsButton.setTitleColor(.red, for: .normal)
+            mediaButton.setTitleColor(.black, for: .normal)
+            likesButton.setTitleColor(.black, for: .normal)
+        } else if horizontalScrollView.contentOffset.x / 4 < 260 {
+            tweetButton.setTitleColor(.black, for: .normal)
+            artistsButton.setTitleColor(.black, for: .normal)
+            mediaButton.setTitleColor(.red, for: .normal)
+            likesButton.setTitleColor(.black, for: .normal)
+        } else {
+            tweetButton.setTitleColor(.black, for: .normal)
+            artistsButton.setTitleColor(.black, for: .normal)
+            mediaButton.setTitleColor(.black, for: .normal)
+            likesButton.setTitleColor(.red, for: .normal)
+        }
+    }
+    
 }
 
 extension FourthViewController {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView == self.horizontalScrollView {
             barLefeConstraint.constant = scrollView.contentOffset.x / 4
+            tabButton()
         } else {
             print(scrollView.contentOffset)
             headerTopConstraint.constant = max(-(scrollView.contentOffset.y), +50)
         }
     }
+    
+    
 }

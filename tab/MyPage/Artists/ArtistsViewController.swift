@@ -25,7 +25,7 @@ class ArtistsViewController: UIViewController, UITableViewDataSource, UITableVie
 extension ArtistsViewController {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

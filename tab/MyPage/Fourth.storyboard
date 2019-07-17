@@ -63,40 +63,44 @@
                                         <rect key="frame" x="0.0" y="366" width="1500" height="70"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPQ-mq-dYa">
-                                                <rect key="frame" x="0.0" y="65" width="250" height="5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="65" width="100" height="5"/>
+                                                <color key="backgroundColor" red="1" green="0.33332679520000003" blue="0.41005219999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="250" id="qAA-vA-vng"/>
+                                                    <constraint firstAttribute="width" constant="100" id="qAA-vA-vng"/>
                                                     <constraint firstAttribute="height" constant="5" id="zyv-ZC-E30"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Dne-Ss-iJ5">
                                                 <rect key="frame" x="0.0" y="0.0" width="1500" height="70"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ツイート" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhC-M9-Ppy">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNN-3z-Pvp">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アーティスト" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REI-DQ-Sct">
+                                                        <state key="normal" title="ツイート"/>
+                                                        <connections>
+                                                            <action selector="tweetTabTapped:" destination="ig1-nf-rL1" eventType="touchUpInside" id="tBu-13-ssu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaf-Lk-jPj">
                                                         <rect key="frame" x="375" y="0.0" width="375" height="70"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メディア" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvU-yl-emk">
+                                                        <state key="normal" title="アーティスト"/>
+                                                        <connections>
+                                                            <action selector="artistTabTapped:" destination="ig1-nf-rL1" eventType="touchUpInside" id="HEZ-dj-AEq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yq-2k-iBI">
                                                         <rect key="frame" x="750" y="0.0" width="375" height="70"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいね" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oP-up-Tzb">
+                                                        <state key="normal" title="メディア"/>
+                                                        <connections>
+                                                            <action selector="mediaTabTapped:" destination="ig1-nf-rL1" eventType="touchUpInside" id="Icb-OW-LOy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6L-7H-6PG">
                                                         <rect key="frame" x="1125" y="0.0" width="375" height="70"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                        <state key="normal" title="いいね"/>
+                                                        <connections>
+                                                            <action selector="likeTabTapped:" destination="ig1-nf-rL1" eventType="touchUpInside" id="prO-Gh-FWI"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -140,46 +144,79 @@
                                     <navigationItem title="MyPage" id="3af-RH-SyY"/>
                                 </items>
                             </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1e6-Vd-Fu5">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1e6-Vd-Fu5">
                                 <rect key="frame" x="0.0" y="524" width="1500" height="289"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oto-iL-40r">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYz-pc-XQ0">
                                         <rect key="frame" x="0.0" y="0.0" width="1500" height="289"/>
                                         <subviews>
-                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Be7-2J-fD2">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="289"/>
-                                                <connections>
-                                                    <segue destination="MgB-sm-i9e" kind="embed" id="u5Y-Ii-T8m"/>
-                                                </connections>
-                                            </containerView>
-                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mic-Bc-v12">
-                                                <rect key="frame" x="375" y="0.0" width="375" height="289"/>
-                                                <connections>
-                                                    <segue destination="NEi-Go-U5N" kind="embed" id="u4i-me-wac"/>
-                                                </connections>
-                                            </containerView>
-                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Whg-vW-fAM">
-                                                <rect key="frame" x="750" y="0.0" width="375" height="289"/>
-                                                <connections>
-                                                    <segue destination="4f1-HL-eAf" kind="embed" id="XjT-Pt-xzq"/>
-                                                </connections>
-                                            </containerView>
-                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WhI-GS-LUt">
-                                                <rect key="frame" x="1125" y="0.0" width="375" height="289"/>
-                                                <connections>
-                                                    <segue destination="Y8u-SY-dh2" kind="embed" id="hp9-oy-sjr"/>
-                                                </connections>
-                                            </containerView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oto-iL-40r">
+                                                <rect key="frame" x="0.0" y="0.0" width="1500" height="289"/>
+                                                <subviews>
+                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Be7-2J-fD2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="289"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="375" id="hNB-To-LSo"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <segue destination="MgB-sm-i9e" kind="embed" id="u5Y-Ii-T8m"/>
+                                                        </connections>
+                                                    </containerView>
+                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mic-Bc-v12">
+                                                        <rect key="frame" x="375" y="0.0" width="375" height="289"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="375" id="ihn-Nk-amu"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <segue destination="NEi-Go-U5N" kind="embed" id="u4i-me-wac"/>
+                                                        </connections>
+                                                    </containerView>
+                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Whg-vW-fAM">
+                                                        <rect key="frame" x="750" y="0.0" width="375" height="289"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="375" id="WQO-3H-pWA"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <segue destination="4f1-HL-eAf" kind="embed" id="XjT-Pt-xzq"/>
+                                                        </connections>
+                                                    </containerView>
+                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WhI-GS-LUt">
+                                                        <rect key="frame" x="1125" y="0.0" width="375" height="289"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="375" id="MN7-FV-nX9"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <segue destination="Y8u-SY-dh2" kind="embed" id="hp9-oy-sjr"/>
+                                                        </connections>
+                                                    </containerView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="WhI-GS-LUt" secondAttribute="bottom" id="GSw-Ix-N6d"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Whg-vW-fAM" secondAttribute="bottom" id="Jaa-Bw-fuo"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Be7-2J-fD2" secondAttribute="bottom" id="KhA-EF-qJN"/>
+                                                    <constraint firstItem="Whg-vW-fAM" firstAttribute="top" secondItem="oto-iL-40r" secondAttribute="top" id="Koh-NJ-S2a"/>
+                                                    <constraint firstItem="Mic-Bc-v12" firstAttribute="top" secondItem="oto-iL-40r" secondAttribute="top" id="R9n-FU-43w"/>
+                                                    <constraint firstItem="WhI-GS-LUt" firstAttribute="top" secondItem="oto-iL-40r" secondAttribute="top" id="Tu3-Z1-u7w"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Mic-Bc-v12" secondAttribute="bottom" id="rQY-G6-8g7"/>
+                                                    <constraint firstItem="Be7-2J-fD2" firstAttribute="top" secondItem="oto-iL-40r" secondAttribute="top" id="zFH-Ao-Vnw"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
-                                    </stackView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1500" id="LkK-q4-Jwc"/>
+                                            <constraint firstItem="oto-iL-40r" firstAttribute="leading" secondItem="gYz-pc-XQ0" secondAttribute="leading" id="Rp4-En-k7z"/>
+                                            <constraint firstItem="oto-iL-40r" firstAttribute="top" secondItem="gYz-pc-XQ0" secondAttribute="top" id="ZAj-Ur-oAC"/>
+                                            <constraint firstAttribute="bottom" secondItem="oto-iL-40r" secondAttribute="bottom" id="ez7-JX-CQ1"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="oto-iL-40r" firstAttribute="centerX" secondItem="1e6-Vd-Fu5" secondAttribute="centerX" id="UVp-aN-9e4"/>
-                                    <constraint firstItem="oto-iL-40r" firstAttribute="centerY" secondItem="1e6-Vd-Fu5" secondAttribute="centerY" id="ZRM-sC-HIb"/>
-                                    <constraint firstItem="oto-iL-40r" firstAttribute="leading" secondItem="1e6-Vd-Fu5" secondAttribute="leading" id="h7d-YZ-SDh"/>
-                                    <constraint firstAttribute="trailing" secondItem="oto-iL-40r" secondAttribute="trailing" id="jRM-5A-IlS"/>
-                                    <constraint firstAttribute="bottom" secondItem="oto-iL-40r" secondAttribute="bottom" id="phu-bV-Fhl"/>
-                                    <constraint firstItem="oto-iL-40r" firstAttribute="top" secondItem="1e6-Vd-Fu5" secondAttribute="top" id="vfB-EI-KN5"/>
+                                    <constraint firstItem="gYz-pc-XQ0" firstAttribute="centerY" secondItem="1e6-Vd-Fu5" secondAttribute="centerY" id="08M-t0-vn8"/>
+                                    <constraint firstAttribute="trailing" secondItem="gYz-pc-XQ0" secondAttribute="trailing" id="1c4-40-2ag"/>
+                                    <constraint firstItem="gYz-pc-XQ0" firstAttribute="top" secondItem="1e6-Vd-Fu5" secondAttribute="top" id="8XE-Rf-i63"/>
+                                    <constraint firstAttribute="bottom" secondItem="gYz-pc-XQ0" secondAttribute="bottom" id="BqN-bs-lSP"/>
+                                    <constraint firstItem="gYz-pc-XQ0" firstAttribute="leading" secondItem="1e6-Vd-Fu5" secondAttribute="leading" id="HUi-fj-Bd9"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -190,6 +227,7 @@
                             <constraint firstItem="1e6-Vd-Fu5" firstAttribute="top" secondItem="Ohp-9y-GpN" secondAttribute="bottom" id="HdD-1C-YA4"/>
                             <constraint firstItem="1e6-Vd-Fu5" firstAttribute="trailing" secondItem="pOT-Ta-fTD" secondAttribute="trailing" id="JzV-xY-BhT"/>
                             <constraint firstItem="Ohp-9y-GpN" firstAttribute="leading" secondItem="pOT-Ta-fTD" secondAttribute="leading" id="LSm-Bl-iCX"/>
+                            <constraint firstItem="1e6-Vd-Fu5" firstAttribute="top" secondItem="Ohp-9y-GpN" secondAttribute="bottom" id="Lq9-Dr-Fhi"/>
                             <constraint firstItem="1e6-Vd-Fu5" firstAttribute="leading" secondItem="pOT-Ta-fTD" secondAttribute="leading" id="Lxz-fL-YGE"/>
                             <constraint firstItem="1e6-Vd-Fu5" firstAttribute="bottom" secondItem="pOT-Ta-fTD" secondAttribute="bottom" id="j7N-az-4LZ"/>
                             <constraint firstItem="FiW-Cc-DJe" firstAttribute="leading" secondItem="Ohp-9y-GpN" secondAttribute="leading" id="nwX-Ub-br9"/>
@@ -208,15 +246,26 @@
                         <outlet property="LikesContainerView" destination="WhI-GS-LUt" id="ve4-Bl-9T0"/>
                         <outlet property="MediaContainerView" destination="Whg-vW-fAM" id="XDO-C2-U56"/>
                         <outlet property="TweetsContainerView" destination="Mic-Bc-v12" id="FWA-wx-f49"/>
+                        <outlet property="artistsButton" destination="vaf-Lk-jPj" id="4ax-Ee-yvk"/>
+                        <outlet property="artistsWidthConstraint" destination="ihn-Nk-amu" id="LNb-zf-lHL"/>
                         <outlet property="avatar" destination="wHL-Iq-j8d" id="0cs-Jt-z0E"/>
                         <outlet property="barLefeConstraint" destination="IQy-no-RAu" id="oVM-ng-uTs"/>
                         <outlet property="barUnderLine" destination="gPQ-mq-dYa" id="CXd-cz-SQS"/>
+                        <outlet property="barUnderLineWidthConstraint" destination="qAA-vA-vng" id="IdV-XQ-bcV"/>
                         <outlet property="biography" destination="54j-Lz-ONo" id="6zP-gO-idX"/>
                         <outlet property="displayName" destination="jh5-kd-QkF" id="GOp-3F-LNX"/>
                         <outlet property="headerTopConstraint" destination="oa7-aV-oqR" id="hhJ-iT-pmW"/>
                         <outlet property="horizontalScrollView" destination="1e6-Vd-Fu5" id="Kbe-yW-AAc"/>
+                        <outlet property="likesButton" destination="i6L-7H-6PG" id="kDT-3z-Mov"/>
+                        <outlet property="likesWidthConstraint" destination="MN7-FV-nX9" id="bnL-pN-x0O"/>
+                        <outlet property="mediaButton" destination="6yq-2k-iBI" id="dwJ-jy-U1r"/>
+                        <outlet property="mediaWidthConstraint" destination="WQO-3H-pWA" id="2Su-bj-cQ8"/>
                         <outlet property="settingButton" destination="dD3-Of-dIT" id="9zf-Zt-99t"/>
+                        <outlet property="tweetButton" destination="aNN-3z-Pvp" id="F4g-h9-1yn"/>
+                        <outlet property="tweetsContainerView" destination="Be7-2J-fD2" id="F3c-zk-ue8"/>
+                        <outlet property="tweetsWidthConstraint" destination="hNB-To-LSo" id="epP-9V-k2y"/>
                         <outlet property="username" destination="cIi-re-Dcw" id="vTk-jR-gSo"/>
+                        <outlet property="wiewWidthConstraint" destination="LkK-q4-Jwc" id="hAG-SX-ti9"/>
                         <segue destination="fEw-Gz-9Q2" kind="push" identifier="toSetting" id="fQx-XI-qZH"/>
                     </connections>
                 </viewController>
