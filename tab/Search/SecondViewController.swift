@@ -11,7 +11,6 @@ import UIKit
 class SecondViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
     let artists: [Artist] = []
-    
     let results: [Artist] = []
 
     @IBOutlet weak var searchBar: UISearchBar!
@@ -24,7 +23,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         searchBar.showsSearchResultsButton = false
         searchBar.enablesReturnKeyAutomatically = false
         
-        artistTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        artistTableView.register(UINib(nibName: "ArtistCell", bundle: nil), forCellReuseIdentifier: "ArtistCell")
         artistTableView.delegate = self
         artistTableView.dataSource = self
     }
@@ -36,33 +35,22 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
 
 extension SecondViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if artists.count == 0 {
-            return 15
-        }
-        if searchBar.text != "" {
-            return results.count
-        } else {
-            return artists.count
-        }
+//        if searchBar.text != "" {
+//            return results.count
+//        } else {
+//            return artists.count
+//        }
+        return 50
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath)
-        if artists.count == 0 {
-            cell.textLabel?.text = "ははははは"
-            return cell
-        }
-        if searchBar.text != "" {
-            cell.textLabel?.text =  results[indexPath.row].name
-        } else {
-            cell.textLabel?.text = artists[indexPath.row].name
-            
-        }
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "ArtistCell", for: indexPath) as! ArtistCellViewController
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "toArtistDetail", sender: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {

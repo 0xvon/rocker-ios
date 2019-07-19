@@ -17,7 +17,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         timelineView.register(UINib(nibName: "TimelineCell", bundle: nil), forCellReuseIdentifier: "TimelineCell")
         timelineView.delegate = self
@@ -52,5 +51,6 @@ extension FirstViewController {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "TimelineCell", for: indexPath) as! TimelineCellViewController
         cell.textLabel?.backgroundColor = .clear
         performSegue(withIdentifier: "toTweetDetail", sender: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

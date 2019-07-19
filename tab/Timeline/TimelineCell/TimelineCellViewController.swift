@@ -42,10 +42,6 @@ class TimelineCellViewController: UITableViewCell {
         }
     }
     
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        tweet.backgroundColor = .gray
-//    }
-    
     @IBAction func commentButtonTapped(_ sender: Any) {
         print("hello")
     }

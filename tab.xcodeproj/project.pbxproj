@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D949CF3D22E1B58B00D92258 /* ArtistCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D949CF3C22E1B58B00D92258 /* ArtistCellViewController.swift */; };
+		D949CF4122E1B5FF00D92258 /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D949CF4022E1B5FF00D92258 /* ArtistCell.xib */; };
 		D955CD9922DF1C200045E204 /* TweetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955CD9822DF1C200045E204 /* TweetsViewController.swift */; };
 		D955CD9D22DF1CB60045E204 /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955CD9C22DF1CB60045E204 /* ArtistsViewController.swift */; };
 		D955CD9F22DF1CDC0045E204 /* Artists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D955CD9E22DF1CDC0045E204 /* Artists.storyboard */; };
@@ -50,6 +52,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D949CF3C22E1B58B00D92258 /* ArtistCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCellViewController.swift; sourceTree = "<group>"; };
+		D949CF4022E1B5FF00D92258 /* ArtistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
 		D955CD9822DF1C200045E204 /* TweetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsViewController.swift; sourceTree = "<group>"; };
 		D955CD9C22DF1CB60045E204 /* ArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
 		D955CD9E22DF1CDC0045E204 /* Artists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Artists.storyboard; sourceTree = "<group>"; };
@@ -105,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D949CF3B22E1B57700D92258 /* ArtistCell */ = {
+			isa = PBXGroup;
+			children = (
+				D949CF3C22E1B58B00D92258 /* ArtistCellViewController.swift */,
+				D949CF4022E1B5FF00D92258 /* ArtistCell.xib */,
+			);
+			path = ArtistCell;
+			sourceTree = "<group>";
+		};
 		D955CD9422DF1B540045E204 /* Tweets */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +203,7 @@
 		D95A235422DC2CD8000BB119 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				D949CF3B22E1B57700D92258 /* ArtistCell */,
 				D95A236622DC5FA6000BB119 /* ArtistDetail */,
 				D95A233F22DC2116000BB119 /* SecondViewController.swift */,
 				D95A235922DC2DD6000BB119 /* Second.storyboard */,
@@ -373,6 +387,7 @@
 				D955CDA722DF1DB00045E204 /* Likes.storyboard in Resources */,
 				D965441222DE3061007D2FE8 /* Notification.storyboard in Resources */,
 				D95A234322DC2116000BB119 /* Main.storyboard in Resources */,
+				D949CF4122E1B5FF00D92258 /* ArtistCell.xib in Resources */,
 				D95A235E22DC2F4D000BB119 /* Fourth.storyboard in Resources */,
 				D95A235A22DC2DD6000BB119 /* Second.storyboard in Resources */,
 				D9A04D9F22DE27BD00592164 /* Comment.storyboard in Resources */,
@@ -393,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D95A234022DC2116000BB119 /* SecondViewController.swift in Sources */,
+				D949CF3D22E1B58B00D92258 /* ArtistCellViewController.swift in Sources */,
 				D955CDA122DF1D370045E204 /* MediaViewController.swift in Sources */,
 				D95A236D22DC6A67000BB119 /* ArtistDetailViewController.swift in Sources */,
 				D95A237722DC799F000BB119 /* ChatViewController.swift in Sources */,
