@@ -9,10 +9,13 @@
 import Foundation
 
 struct Artist {
+    let id: Int
     let name: String
     let member: [String]
     let homepage: URL
     let genre: Genre
+    let concerts: [Concert]
+    let news: [News]
 }
 
 enum Genre {

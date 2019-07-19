@@ -41,7 +41,6 @@ class FourthViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var likesButton: UIButton!
     
     override func viewDidLoad() {
-        print(display.size.width)
         super.viewDidLoad()
         avatar.image = UIImage(named: "avatar")
         avatar.layer.cornerRadius = 50

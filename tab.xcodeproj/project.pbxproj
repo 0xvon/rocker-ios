@@ -50,6 +50,11 @@
 		D9A04D9B22DE274800592164 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A04D9A22DE274800592164 /* CommentViewController.swift */; };
 		D9A04D9F22DE27BD00592164 /* Comment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A04D9E22DE27BD00592164 /* Comment.storyboard */; };
 		D9A9D6BF22E1C9600009CA0F /* Concert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9D6BE22E1C9600009CA0F /* Concert.swift */; };
+		D9A9D6C122E1CB600009CA0F /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9D6C022E1CB600009CA0F /* News.swift */; };
+		D9A9D6C522E1D9D40009CA0F /* ConcertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9D6C422E1D9D40009CA0F /* ConcertViewController.swift */; };
+		D9A9D6C722E1D9E20009CA0F /* Concert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A9D6C622E1D9E20009CA0F /* Concert.storyboard */; };
+		D9A9D6C922E1DA3E0009CA0F /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9D6C822E1DA3E0009CA0F /* NewsViewController.swift */; };
+		D9A9D6CB22E1DA610009CA0F /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A9D6CA22E1DA610009CA0F /* News.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +103,11 @@
 		D9A04D9A22DE274800592164 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		D9A04D9E22DE27BD00592164 /* Comment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Comment.storyboard; sourceTree = "<group>"; };
 		D9A9D6BE22E1C9600009CA0F /* Concert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concert.swift; sourceTree = "<group>"; };
+		D9A9D6C022E1CB600009CA0F /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		D9A9D6C422E1D9D40009CA0F /* ConcertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertViewController.swift; sourceTree = "<group>"; };
+		D9A9D6C622E1D9E20009CA0F /* Concert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Concert.storyboard; sourceTree = "<group>"; };
+		D9A9D6C822E1DA3E0009CA0F /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		D9A9D6CA22E1DA610009CA0F /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +255,7 @@
 				D95A236422DC3EFB000BB119 /* Artist.swift */,
 				D95A237A22DC7C10000BB119 /* Account.swift */,
 				D9A9D6BE22E1C9600009CA0F /* Concert.swift */,
+				D9A9D6C022E1CB600009CA0F /* News.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,8 +263,10 @@
 		D95A236622DC5FA6000BB119 /* ArtistDetail */ = {
 			isa = PBXGroup;
 			children = (
-				D95A236C22DC6A67000BB119 /* ArtistDetailViewController.swift */,
+				D9A9D6C222E1D9B30009CA0F /* Concert */,
+				D9A9D6C322E1D9BD0009CA0F /* News */,
 				D95A236E22DC6C2F000BB119 /* ArtistDetail.storyboard */,
+				D95A236C22DC6A67000BB119 /* ArtistDetailViewController.swift */,
 			);
 			path = ArtistDetail;
 			sourceTree = "<group>";
@@ -322,6 +335,24 @@
 			path = Comment;
 			sourceTree = "<group>";
 		};
+		D9A9D6C222E1D9B30009CA0F /* Concert */ = {
+			isa = PBXGroup;
+			children = (
+				D9A9D6C422E1D9D40009CA0F /* ConcertViewController.swift */,
+				D9A9D6C622E1D9E20009CA0F /* Concert.storyboard */,
+			);
+			path = Concert;
+			sourceTree = "<group>";
+		};
+		D9A9D6C322E1D9BD0009CA0F /* News */ = {
+			isa = PBXGroup;
+			children = (
+				D9A9D6C822E1DA3E0009CA0F /* NewsViewController.swift */,
+				D9A9D6CA22E1DA610009CA0F /* News.storyboard */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,9 +416,11 @@
 				D955CD9F22DF1CDC0045E204 /* Artists.storyboard in Resources */,
 				D95A236F22DC6C2F000BB119 /* ArtistDetail.storyboard in Resources */,
 				D95A234822DC2117000BB119 /* LaunchScreen.storyboard in Resources */,
+				D9A9D6CB22E1DA610009CA0F /* News.storyboard in Resources */,
 				D95A237222DC7342000BB119 /* TweetDetail.storyboard in Resources */,
 				D95A234522DC2117000BB119 /* Assets.xcassets in Resources */,
 				D955CDA722DF1DB00045E204 /* Likes.storyboard in Resources */,
+				D9A9D6C722E1D9E20009CA0F /* Concert.storyboard in Resources */,
 				D965441222DE3061007D2FE8 /* Notification.storyboard in Resources */,
 				D95A234322DC2116000BB119 /* Main.storyboard in Resources */,
 				D949CF4122E1B5FF00D92258 /* ArtistCell.xib in Resources */,
@@ -428,7 +461,10 @@
 				D955CD9922DF1C200045E204 /* TweetsViewController.swift in Sources */,
 				D95A233E22DC2116000BB119 /* FirstViewController.swift in Sources */,
 				D95A235222DC25FF000BB119 /* FourthViewController.swift in Sources */,
+				D9A9D6C122E1CB600009CA0F /* News.swift in Sources */,
+				D9A9D6C922E1DA3E0009CA0F /* NewsViewController.swift in Sources */,
 				D95A236522DC3EFB000BB119 /* Artist.swift in Sources */,
+				D9A9D6C522E1D9D40009CA0F /* ConcertViewController.swift in Sources */,
 				D95A236322DC39FA000BB119 /* User.swift in Sources */,
 				D965441022DE3058007D2FE8 /* NotificationViewController.swift in Sources */,
 				D95A237422DC7350000BB119 /* TweetDetailViewController.swift in Sources */,

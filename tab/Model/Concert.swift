@@ -9,6 +9,7 @@
 import Foundation
 
 struct Concert {
+    let id: Int
     let name: String
     let category: concertType
     let place: String
@@ -16,6 +17,7 @@ struct Concert {
     let startTime: TimeZone
     let endTime: TimeZone
     let avatar: String
+    let artist: Artist
     
 }
 
