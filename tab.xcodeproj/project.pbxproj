@@ -49,6 +49,7 @@
 		D9A04D9822DE121700592164 /* TimelineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A04D9722DE121700592164 /* TimelineCell.xib */; };
 		D9A04D9B22DE274800592164 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A04D9A22DE274800592164 /* CommentViewController.swift */; };
 		D9A04D9F22DE27BD00592164 /* Comment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A04D9E22DE27BD00592164 /* Comment.storyboard */; };
+		D9A9D6BF22E1C9600009CA0F /* Concert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9D6BE22E1C9600009CA0F /* Concert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		D9A04D9722DE121700592164 /* TimelineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineCell.xib; sourceTree = "<group>"; };
 		D9A04D9A22DE274800592164 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		D9A04D9E22DE27BD00592164 /* Comment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Comment.storyboard; sourceTree = "<group>"; };
+		D9A9D6BE22E1C9600009CA0F /* Concert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 				D95A236222DC39FA000BB119 /* User.swift */,
 				D95A236422DC3EFB000BB119 /* Artist.swift */,
 				D95A237A22DC7C10000BB119 /* Account.swift */,
+				D9A9D6BE22E1C9600009CA0F /* Concert.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				D95A234022DC2116000BB119 /* SecondViewController.swift in Sources */,
 				D949CF3D22E1B58B00D92258 /* ArtistCellViewController.swift in Sources */,
 				D955CDA122DF1D370045E204 /* MediaViewController.swift in Sources */,
+				D9A9D6BF22E1C9600009CA0F /* Concert.swift in Sources */,
 				D95A236D22DC6A67000BB119 /* ArtistDetailViewController.swift in Sources */,
 				D95A237722DC799F000BB119 /* ChatViewController.swift in Sources */,
 				D955CD9D22DF1CB60045E204 /* ArtistsViewController.swift in Sources */,

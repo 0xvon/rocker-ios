@@ -12,4 +12,15 @@ struct Artist {
     let name: String
     let member: [String]
     let homepage: URL
+    let genre: Genre
+}
+
+enum Genre {
+    case rock
+    case pop
+    case alternative
+    case anime
+    case westernMusic
+    case japaneseMusic
+    case coreanMusic
 }
