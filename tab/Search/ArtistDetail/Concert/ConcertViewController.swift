@@ -18,7 +18,7 @@ class ConcertViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         concertTableView.delegate = self
         concertTableView.dataSource = self
-        concertTableView.register(UINib(nibName: "TimelineCell", bundle: nil), forCellReuseIdentifier: "TimelineCell")
+        concertTableView.register(UINib(nibName: "ConcertCell", bundle: nil), forCellReuseIdentifier: "ConcertCell")
         concertTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 }
@@ -29,7 +29,7 @@ extension ConcertViewController {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "TimelineCell", for: indexPath) as! TimelineCellViewController
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "ConcertCell", for: indexPath) as! ConcertCellViewController
         return cell
     }
     

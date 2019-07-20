@@ -61,6 +61,10 @@
 		D9A9D6D622E2B0C40009CA0F /* LeftBalloon.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A9D6D522E2B0C40009CA0F /* LeftBalloon.xib */; };
 		D9A9D6D822E2B0F30009CA0F /* RightBalloonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9D6D722E2B0F30009CA0F /* RightBalloonViewController.swift */; };
 		D9A9D6DA22E2B1150009CA0F /* RightBalloon.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A9D6D922E2B1150009CA0F /* RightBalloon.xib */; };
+		D9A9D6DD22E2D2BB0009CA0F /* ConcertCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9D6DC22E2D2BB0009CA0F /* ConcertCellViewController.swift */; };
+		D9A9D6DF22E2D2E00009CA0F /* ConcertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A9D6DE22E2D2E00009CA0F /* ConcertCell.xib */; };
+		D9A9D6E222E2D9380009CA0F /* NewsCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9D6E122E2D9380009CA0F /* NewsCellViewController.swift */; };
+		D9A9D6E422E2D9570009CA0F /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A9D6E322E2D9570009CA0F /* NewsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +124,10 @@
 		D9A9D6D522E2B0C40009CA0F /* LeftBalloon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftBalloon.xib; sourceTree = "<group>"; };
 		D9A9D6D722E2B0F30009CA0F /* RightBalloonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBalloonViewController.swift; sourceTree = "<group>"; };
 		D9A9D6D922E2B1150009CA0F /* RightBalloon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightBalloon.xib; sourceTree = "<group>"; };
+		D9A9D6DC22E2D2BB0009CA0F /* ConcertCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertCellViewController.swift; sourceTree = "<group>"; };
+		D9A9D6DE22E2D2E00009CA0F /* ConcertCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConcertCell.xib; sourceTree = "<group>"; };
+		D9A9D6E122E2D9380009CA0F /* NewsCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCellViewController.swift; sourceTree = "<group>"; };
+		D9A9D6E322E2D9570009CA0F /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +361,7 @@
 		D9A9D6C222E1D9B30009CA0F /* Concert */ = {
 			isa = PBXGroup;
 			children = (
+				D9A9D6DB22E2D29E0009CA0F /* ConcertCell */,
 				D9A9D6C422E1D9D40009CA0F /* ConcertViewController.swift */,
 				D9A9D6C622E1D9E20009CA0F /* Concert.storyboard */,
 			);
@@ -362,6 +371,7 @@
 		D9A9D6C322E1D9BD0009CA0F /* News */ = {
 			isa = PBXGroup;
 			children = (
+				D9A9D6E022E2D92A0009CA0F /* NewsCell */,
 				D9A9D6C822E1DA3E0009CA0F /* NewsViewController.swift */,
 				D9A9D6CA22E1DA610009CA0F /* News.storyboard */,
 			);
@@ -393,6 +403,24 @@
 				D9A9D6D522E2B0C40009CA0F /* LeftBalloon.xib */,
 			);
 			path = LeftBalloon;
+			sourceTree = "<group>";
+		};
+		D9A9D6DB22E2D29E0009CA0F /* ConcertCell */ = {
+			isa = PBXGroup;
+			children = (
+				D9A9D6DC22E2D2BB0009CA0F /* ConcertCellViewController.swift */,
+				D9A9D6DE22E2D2E00009CA0F /* ConcertCell.xib */,
+			);
+			path = ConcertCell;
+			sourceTree = "<group>";
+		};
+		D9A9D6E022E2D92A0009CA0F /* NewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				D9A9D6E122E2D9380009CA0F /* NewsCellViewController.swift */,
+				D9A9D6E322E2D9570009CA0F /* NewsCell.xib */,
+			);
+			path = NewsCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,7 +485,9 @@
 				D955CDAB22DF33030045E204 /* Tweets.storyboard in Resources */,
 				D955CD9F22DF1CDC0045E204 /* Artists.storyboard in Resources */,
 				D95A236F22DC6C2F000BB119 /* ArtistDetail.storyboard in Resources */,
+				D9A9D6DF22E2D2E00009CA0F /* ConcertCell.xib in Resources */,
 				D95A234822DC2117000BB119 /* LaunchScreen.storyboard in Resources */,
+				D9A9D6E422E2D9570009CA0F /* NewsCell.xib in Resources */,
 				D9A9D6CB22E1DA610009CA0F /* News.storyboard in Resources */,
 				D9A9D6DA22E2B1150009CA0F /* RightBalloon.xib in Resources */,
 				D95A237222DC7342000BB119 /* TweetDetail.storyboard in Resources */,
@@ -488,6 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A9D6E222E2D9380009CA0F /* NewsCellViewController.swift in Sources */,
 				D95A234022DC2116000BB119 /* SecondViewController.swift in Sources */,
 				D949CF3D22E1B58B00D92258 /* ArtistCellViewController.swift in Sources */,
 				D955CDA122DF1D370045E204 /* MediaViewController.swift in Sources */,
@@ -511,6 +542,7 @@
 				D9A9D6C122E1CB600009CA0F /* News.swift in Sources */,
 				D9A9D6C922E1DA3E0009CA0F /* NewsViewController.swift in Sources */,
 				D95A236522DC3EFB000BB119 /* Artist.swift in Sources */,
+				D9A9D6DD22E2D2BB0009CA0F /* ConcertCellViewController.swift in Sources */,
 				D9A9D6C522E1D9D40009CA0F /* ConcertViewController.swift in Sources */,
 				D9A9D6D822E2B0F30009CA0F /* RightBalloonViewController.swift in Sources */,
 				D95A236322DC39FA000BB119 /* User.swift in Sources */,

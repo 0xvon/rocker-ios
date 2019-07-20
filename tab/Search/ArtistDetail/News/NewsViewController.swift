@@ -17,7 +17,7 @@ class NewsViewController: UIViewController {
         
         newsTableView.delegate = self
         newsTableView.dataSource = self
-        newsTableView.register(UINib(nibName: "TimelineCell", bundle: nil), forCellReuseIdentifier: "TimelineCell")
+        newsTableView.register(UINib(nibName: "NewsCell", bundle: nil), forCellReuseIdentifier: "NewsCell")
         newsTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 }
@@ -28,7 +28,7 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "TimelineCell", for: indexPath) as! TimelineCellViewController
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "NewsCell", for: indexPath) as! NewsCellViewController
         return cell
     }
     
