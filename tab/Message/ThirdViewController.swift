@@ -14,7 +14,7 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        messageTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        messageTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "MessageCell")
         messageTableView.delegate = self
         messageTableView.dataSource = self
     }
@@ -27,8 +27,7 @@ extension ThirdViewController {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath)
-        cell.textLabel?.text =  "こんにちは！どこ住み？てかLINEやってる？"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath as IndexPath) as! MessageCellViewController
         return cell
     }
     

@@ -18,20 +18,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPe-6H-K6w">
-                                <rect key="frame" x="189" y="438" width="37" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" pagingEnabled="YES" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewg-hD-ogB">
+                                <rect key="frame" x="0.0" y="93" width="414" height="652"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="buq-GB-hKr">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="709"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpz-Fi-iGf">
+                                <rect key="frame" x="0.0" y="767" width="414" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BV1-5d-FSu">
+                                        <rect key="frame" x="324" y="8" width="82" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="submitButtonTapped:" destination="BpY-Qn-0vK" eventType="touchUpInside" id="YU1-Lu-lv0"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZbC-5F-bps">
+                                        <rect key="frame" x="8" y="8" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="zcN-Gt-W6n"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.57482967009999997" green="0.50386167989999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="BV1-5d-FSu" secondAttribute="trailing" constant="8" id="28G-OO-ht1"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZbC-5F-bps" secondAttribute="bottom" constant="8" id="8ZG-tj-WQK"/>
+                                    <constraint firstItem="BV1-5d-FSu" firstAttribute="top" secondItem="kpz-Fi-iGf" secondAttribute="top" constant="8" id="B6E-km-cTG"/>
+                                    <constraint firstItem="BV1-5d-FSu" firstAttribute="leading" secondItem="ZbC-5F-bps" secondAttribute="trailing" constant="16" id="Z35-8S-gdr"/>
+                                    <constraint firstItem="ZbC-5F-bps" firstAttribute="top" secondItem="kpz-Fi-iGf" secondAttribute="top" constant="8" id="ZlY-Et-6oS"/>
+                                    <constraint firstAttribute="bottom" secondItem="BV1-5d-FSu" secondAttribute="bottom" constant="8" id="bMQ-5T-zaZ"/>
+                                    <constraint firstItem="ZbC-5F-bps" firstAttribute="leading" secondItem="kpz-Fi-iGf" secondAttribute="leading" constant="8" id="xOg-8q-zeA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kpz-Fi-iGf" firstAttribute="trailing" secondItem="pGl-im-O6F" secondAttribute="trailing" id="KLi-rV-ewh"/>
+                            <constraint firstItem="ewg-hD-ogB" firstAttribute="leading" secondItem="pGl-im-O6F" secondAttribute="leading" id="NDW-TT-akJ"/>
+                            <constraint firstItem="kpz-Fi-iGf" firstAttribute="leading" secondItem="pGl-im-O6F" secondAttribute="leading" id="Ova-M2-GMS"/>
+                            <constraint firstItem="kpz-Fi-iGf" firstAttribute="top" secondItem="ewg-hD-ogB" secondAttribute="bottom" id="gfU-8S-q1i"/>
+                            <constraint firstItem="ewg-hD-ogB" firstAttribute="trailing" secondItem="pGl-im-O6F" secondAttribute="trailing" id="iEp-tG-YNd"/>
+                            <constraint firstItem="ewg-hD-ogB" firstAttribute="top" secondItem="pGl-im-O6F" secondAttribute="top" id="lb3-Wv-G2J"/>
+                            <constraint firstItem="kpz-Fi-iGf" firstAttribute="bottom" secondItem="pGl-im-O6F" secondAttribute="bottom" id="ntp-mE-ROU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pGl-im-O6F"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="chatContentsTableView" destination="buq-GB-hKr" id="kpp-aY-SSQ"/>
+                        <outlet property="chatScrollView" destination="ewg-hD-ogB" id="kUG-AD-IME"/>
+                        <outlet property="submitButton" destination="BV1-5d-FSu" id="O4N-FN-v1f"/>
+                        <outlet property="textField" destination="ZbC-5F-bps" id="8hg-Iu-KmY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aa0-Ve-Xya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
