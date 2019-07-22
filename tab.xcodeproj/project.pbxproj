@@ -42,6 +42,10 @@
 		D95A237722DC799F000BB119 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A237622DC799F000BB119 /* ChatViewController.swift */; };
 		D95A237922DC79C0000BB119 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A237822DC79C0000BB119 /* Chat.storyboard */; };
 		D95A237B22DC7C10000BB119 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A237A22DC7C10000BB119 /* Account.swift */; };
+		D95FAC6C22E5DC75003F99BD /* ArtistAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95FAC6B22E5DC75003F99BD /* ArtistAPIRequest.swift */; };
+		D95FAC6E22E5DC88003F99BD /* UserAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95FAC6D22E5DC88003F99BD /* UserAPIRequest.swift */; };
+		D95FAC7022E5DC9F003F99BD /* ConcertAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95FAC6F22E5DC9F003F99BD /* ConcertAPIRequest.swift */; };
+		D95FAC7222E5DCA9003F99BD /* NewsAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95FAC7122E5DCA9003F99BD /* NewsAPIRequest.swift */; };
 		D965440C22DE3025007D2FE8 /* NewTweet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D965440B22DE3025007D2FE8 /* NewTweet.storyboard */; };
 		D965440E22DE304A007D2FE8 /* NewTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965440D22DE304A007D2FE8 /* NewTweetViewController.swift */; };
 		D965441022DE3058007D2FE8 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965440F22DE3058007D2FE8 /* NotificationViewController.swift */; };
@@ -109,6 +113,10 @@
 		D95A237622DC799F000BB119 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		D95A237822DC79C0000BB119 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		D95A237A22DC7C10000BB119 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		D95FAC6B22E5DC75003F99BD /* ArtistAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistAPIRequest.swift; sourceTree = "<group>"; };
+		D95FAC6D22E5DC88003F99BD /* UserAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIRequest.swift; sourceTree = "<group>"; };
+		D95FAC6F22E5DC9F003F99BD /* ConcertAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertAPIRequest.swift; sourceTree = "<group>"; };
+		D95FAC7122E5DCA9003F99BD /* NewsAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIRequest.swift; sourceTree = "<group>"; };
 		D965440B22DE3025007D2FE8 /* NewTweet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewTweet.storyboard; sourceTree = "<group>"; };
 		D965440D22DE304A007D2FE8 /* NewTweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetViewController.swift; sourceTree = "<group>"; };
 		D965440F22DE3058007D2FE8 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +179,10 @@
 			isa = PBXGroup;
 			children = (
 				D9233BEA22E5C9A600FF742A /* TweetAPIRequest.swift */,
+				D95FAC6B22E5DC75003F99BD /* ArtistAPIRequest.swift */,
+				D95FAC6D22E5DC88003F99BD /* UserAPIRequest.swift */,
+				D95FAC6F22E5DC9F003F99BD /* ConcertAPIRequest.swift */,
+				D95FAC7122E5DCA9003F99BD /* NewsAPIRequest.swift */,
 			);
 			path = APIRequest;
 			sourceTree = "<group>";
@@ -608,6 +620,7 @@
 				D9A9D6BF22E1C9600009CA0F /* Concert.swift in Sources */,
 				D95A236D22DC6A67000BB119 /* ArtistDetailViewController.swift in Sources */,
 				D95A237722DC799F000BB119 /* ChatViewController.swift in Sources */,
+				D95FAC6C22E5DC75003F99BD /* ArtistAPIRequest.swift in Sources */,
 				D955CD9D22DF1CB60045E204 /* ArtistsViewController.swift in Sources */,
 				D95A236122DC38FE000BB119 /* tweet.swift in Sources */,
 				D965440E22DE304A007D2FE8 /* NewTweetViewController.swift in Sources */,
@@ -615,9 +628,11 @@
 				D9A04D9122DE0CF300592164 /* SettingViewController.swift in Sources */,
 				D9A9D6D422E2B09C0009CA0F /* LeftBalloonViewController.swift in Sources */,
 				D95A237B22DC7C10000BB119 /* Account.swift in Sources */,
+				D95FAC7022E5DC9F003F99BD /* ConcertAPIRequest.swift in Sources */,
 				D95A235022DC21CA000BB119 /* ThirdViewController.swift in Sources */,
 				D955CDA522DF1D910045E204 /* LikesViewController.swift in Sources */,
 				D9A04D9B22DE274800592164 /* CommentViewController.swift in Sources */,
+				D95FAC7222E5DCA9003F99BD /* NewsAPIRequest.swift in Sources */,
 				D955CD9922DF1C200045E204 /* TweetsViewController.swift in Sources */,
 				D95A233E22DC2116000BB119 /* FirstViewController.swift in Sources */,
 				D9A9D6D022E291270009CA0F /* MessageCellViiewController.swift in Sources */,
@@ -633,6 +648,7 @@
 				D965441022DE3058007D2FE8 /* NotificationViewController.swift in Sources */,
 				D95A237422DC7350000BB119 /* TweetDetailViewController.swift in Sources */,
 				D9A04D9622DE120300592164 /* TimelineCellViewController.swift in Sources */,
+				D95FAC6E22E5DC88003F99BD /* UserAPIRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
