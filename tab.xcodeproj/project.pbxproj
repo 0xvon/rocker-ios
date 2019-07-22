@@ -65,6 +65,7 @@
 		D9A9D6DF22E2D2E00009CA0F /* ConcertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A9D6DE22E2D2E00009CA0F /* ConcertCell.xib */; };
 		D9A9D6E222E2D9380009CA0F /* NewsCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9D6E122E2D9380009CA0F /* NewsCellViewController.swift */; };
 		D9A9D6E422E2D9570009CA0F /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A9D6E322E2D9570009CA0F /* NewsCell.xib */; };
+		D9DEF52422E5B3D50077CCCD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9DEF52322E5B3D50077CCCD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +129,7 @@
 		D9A9D6DE22E2D2E00009CA0F /* ConcertCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConcertCell.xib; sourceTree = "<group>"; };
 		D9A9D6E122E2D9380009CA0F /* NewsCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCellViewController.swift; sourceTree = "<group>"; };
 		D9A9D6E322E2D9570009CA0F /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		D9DEF52322E5B3D50077CCCD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 				D95A234422DC2117000BB119 /* Assets.xcassets */,
 				D95A234622DC2117000BB119 /* LaunchScreen.storyboard */,
 				D95A234922DC2117000BB119 /* Info.plist */,
+				D9DEF52322E5B3D50077CCCD /* GoogleService-Info.plist */,
 				D95A235F22DC38EA000BB119 /* Model */,
 			);
 			path = tab;
@@ -494,6 +497,7 @@
 				D95A234522DC2117000BB119 /* Assets.xcassets in Resources */,
 				D955CDA722DF1DB00045E204 /* Likes.storyboard in Resources */,
 				D9A9D6C722E1D9E20009CA0F /* Concert.storyboard in Resources */,
+				D9DEF52422E5B3D50077CCCD /* GoogleService-Info.plist in Resources */,
 				D9A9D6D622E2B0C40009CA0F /* LeftBalloon.xib in Resources */,
 				D965441222DE3061007D2FE8 /* Notification.storyboard in Resources */,
 				D95A234322DC2116000BB119 /* Main.storyboard in Resources */,
