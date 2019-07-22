@@ -36,13 +36,10 @@ class TweetAPIRequest {
         self.database.collection("users").getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
-                let response: [QueryDocumentSnapshot]? = nil
             } else {
                 for document in querySnapshot!.documents {
                     print("\(document.documentID) => \(document.data())")
-                    
                 }
-                let response: [QueryDocumentSnapshot]? = querySnapshot!.documents
             }
         }
     }
