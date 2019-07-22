@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -162,8 +162,14 @@
 				16001ED0032337615C825855 /* Pods-tab.debug.xcconfig */,
 				706E416DF11F079FD1DEC528 /* Pods-tab.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D9233BE922E5C56800FF742A /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIRequest;
 			sourceTree = "<group>";
 		};
 		D949CF3B22E1B57700D92258 /* ArtistCell */ = {
@@ -242,6 +248,7 @@
 				D95A234622DC2117000BB119 /* LaunchScreen.storyboard */,
 				D95A234922DC2117000BB119 /* Info.plist */,
 				D945D4C422E5BC4100C17C13 /* GoogleService-Info.plist */,
+				D9233BE922E5C56800FF742A /* APIRequest */,
 				D95A235F22DC38EA000BB119 /* Model */,
 			);
 			path = tab;
