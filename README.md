@@ -1,6 +1,3 @@
-# rocker-ios
-
-
 ## abstract
 
 This is the sns application for all music fans.<br>
