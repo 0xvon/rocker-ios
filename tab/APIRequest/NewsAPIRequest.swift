@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseFirestore
+
+class NewsAPIRequest {
+    
+    let database = Firestore.firestore()
+    var ref: DocumentReference? = nil
+    
+    func getNews(artist: Artist) {
+        
+    }
+    
+    func getNewsInfo(news: News) {
+        
+    }
+    
+    func shareNews(news: News) {
+        
+    }
+}

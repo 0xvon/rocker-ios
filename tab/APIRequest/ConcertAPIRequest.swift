@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseFirestore
+
+class ConcertAPIRequest {
+    
+    let database = Firestore.firestore()
+    var ref: DocumentReference? = nil
+    
+    func getConcerts(artist: Artist) {
+        
+    }
+    
+    func getConcertInfo(concert: Concert) {
+        
+    }
+    
+    func shareConcert(concert: Concert) {
+        
+    }
+}

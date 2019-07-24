@@ -7,3 +7,36 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseFirestore
+
+class UserAPIRequest {
+    
+    let database = Firestore.firestore()
+    var ref: DocumentReference? = nil
+    
+    func follow(user: User) {
+        
+    }
+    
+    func unfollow(user: User) {
+        
+    }
+    
+    func block(user: User) {
+        
+    }
+    
+    func unblock(user: User) {
+        
+    }
+    
+    func getFollowers(user: User) {
+        
+    }
+    
+    func getFollowings(user: User) {
+        
+    }
+    
+}

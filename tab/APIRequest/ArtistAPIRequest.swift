@@ -7,3 +7,31 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseFirestore
+
+class ArtistAPIRequest {
+    
+    let database = Firestore.firestore()
+    var ref: DocumentReference? = nil
+    
+    func getArtists() {
+        
+    }
+    
+    func getArtistInfo(artist: Artist) {
+        
+    }
+    
+    func like(artist: Artist) {
+        
+    }
+    
+    func cancelLike(artist: Artist) {
+        
+    }
+    
+    func shareArtist(artist: Artist) {
+        
+    }
+}

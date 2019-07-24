@@ -31,6 +31,18 @@ class TweetAPIRequest {
         }
     }
     
+    func deleteTweet(tweet: Tweet) {
+        
+    }
+    
+    func toggleRetweet(tweet: Tweet) {
+        
+    }
+    
+    func toggleLike(tweet: Tweet) {
+        
+    }
+    
     func getTimeline() {
         
         self.database.collection("users").getDocuments() { (querySnapshot, err) in
@@ -43,5 +55,18 @@ class TweetAPIRequest {
             }
         }
     }
+    
+    func getTweets(user: User) {
+        
+    }
+    
+    func getLikes(user: User) {
+        
+    }
+    
+    func getMedia(user: User) {
+        
+    }
+    
     
 }
