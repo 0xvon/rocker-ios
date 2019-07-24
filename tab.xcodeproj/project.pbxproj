@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D5FB2044385F74290A5E2E54 /* Pods_tab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E361D231C0A04A7BF3CBC6F8 /* Pods_tab.framework */; };
 		D9233BEB22E5C9A600FF742A /* TweetAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9233BEA22E5C9A600FF742A /* TweetAPIRequest.swift */; };
+		D940407122E854A200264A3D /* AccountAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940407022E854A200264A3D /* AccountAPIRequest.swift */; };
 		D945D4C522E5BC4100C17C13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D945D4C422E5BC4100C17C13 /* GoogleService-Info.plist */; };
 		D949CF3D22E1B58B00D92258 /* ArtistCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D949CF3C22E1B58B00D92258 /* ArtistCellViewController.swift */; };
 		D949CF4122E1B5FF00D92258 /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D949CF4022E1B5FF00D92258 /* ArtistCell.xib */; };
@@ -78,6 +79,7 @@
 		16001ED0032337615C825855 /* Pods-tab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tab.debug.xcconfig"; path = "Target Support Files/Pods-tab/Pods-tab.debug.xcconfig"; sourceTree = "<group>"; };
 		706E416DF11F079FD1DEC528 /* Pods-tab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tab.release.xcconfig"; path = "Target Support Files/Pods-tab/Pods-tab.release.xcconfig"; sourceTree = "<group>"; };
 		D9233BEA22E5C9A600FF742A /* TweetAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetAPIRequest.swift; sourceTree = "<group>"; };
+		D940407022E854A200264A3D /* AccountAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPIRequest.swift; sourceTree = "<group>"; };
 		D945D4C422E5BC4100C17C13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D949CF3C22E1B58B00D92258 /* ArtistCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCellViewController.swift; sourceTree = "<group>"; };
 		D949CF4022E1B5FF00D92258 /* ArtistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				D95FAC6D22E5DC88003F99BD /* UserAPIRequest.swift */,
 				D95FAC6F22E5DC9F003F99BD /* ConcertAPIRequest.swift */,
 				D95FAC7122E5DCA9003F99BD /* NewsAPIRequest.swift */,
+				D940407022E854A200264A3D /* AccountAPIRequest.swift */,
 			);
 			path = APIRequest;
 			sourceTree = "<group>";
@@ -625,6 +628,7 @@
 				D95A236122DC38FE000BB119 /* tweet.swift in Sources */,
 				D965440E22DE304A007D2FE8 /* NewTweetViewController.swift in Sources */,
 				D95A233C22DC2116000BB119 /* AppDelegate.swift in Sources */,
+				D940407122E854A200264A3D /* AccountAPIRequest.swift in Sources */,
 				D9A04D9122DE0CF300592164 /* SettingViewController.swift in Sources */,
 				D9A9D6D422E2B09C0009CA0F /* LeftBalloonViewController.swift in Sources */,
 				D95A237B22DC7C10000BB119 /* Account.swift in Sources */,
